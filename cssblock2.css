@@ -2,21 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .header {
-  padding: 0 20px 0 20px;
-  max-height: 76px;
-  max-width: 1440px;
   display: flex;
-  align-items: center;
-  flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid #EFF5FB;
+  align-items: center;
   margin: 0 auto;
-  width: 100%;
-
+  max-width: 1440px;
+  padding: 1rem;
 }
 
 .header__fix {
@@ -43,19 +37,17 @@
   font-weight: medium;
   color: #333333;
   letter-spacing: 0.25px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 114%;
-
 }
 
 .header__svg {
   color: #9e0c0c;
 
   filter: grayscale(100%) hue-rotate(360deg) saturate(0%) contrast(0%);
-
 }
 
 .header__btn {
@@ -65,30 +57,23 @@
   height: 48px;
   border: 120px;
   background-color: #e3f5f5;
-  color: #03B2A5;
+  color: #03b2a5;
   border-radius: 4px;
   cursor: pointer;
   margin: 14px 0 14px 0;
-
-
 }
 
 .header__btn:hover {
   background: rgba(0, 0, 0, 0);
-  color: #03B2A5;
+  color: #03b2a5;
   box-shadow: inset 0 0 0 3px #16704b;
 }
 
-
-
 #hamburger-input {
   display: none;
-
-
 }
 
 #hamburger-menu {
-
   position: absolute;
   top: 18px;
   right: 20px;
@@ -100,12 +85,19 @@
   padding: 0px;
   margin: 0px;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(to bottom,
-      #03B2A5, #03B2A5 20%,
-      white 20%, white 40%,
-      #03B2A5 40%, #03B2A5 60%,
-      white 60%, white 80%,
-      #03B2A5 80%, #03B2A5 100%);
+  background: linear-gradient(
+    to bottom,
+    #03b2a5,
+    #03b2a5 20%,
+    white 20%,
+    white 40%,
+    #03b2a5 40%,
+    #03b2a5 60%,
+    white 60%,
+    white 80%,
+    #03b2a5 80%,
+    #03b2a5 100%
+  );
 }
 
 #hamburger-menu #sidebar-menu {
@@ -120,7 +112,6 @@
   padding: 0px 10px;
   box-sizing: border-box;
   z-index: 1;
-
 }
 
 .menu {
@@ -131,8 +122,6 @@
   flex-wrap: nowrap;
   gap: 50px;
   padding: 70px 0 0 0;
-
-
 }
 
 .menu__href {
@@ -141,7 +130,7 @@
 }
 
 #hamburger-menu h3 {
-  color: #B9FAF8;
+  color: #b9faf8;
   font-size: 2.2rem;
 }
 
@@ -155,7 +144,7 @@
 }
 
 #hamburger-menu a {
-  color: #B9FAF8;
+  color: #b9faf8;
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -164,20 +153,15 @@
   text-decoration: none;
 }
 
-#hamburger-input:checked+#hamburger-menu #sidebar-menu {
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
   visibility: visible;
   left: 0;
 }
 
-#hamburger-input:checked~.overlay {
+#hamburger-input:checked ~ .overlay {
   visibility: visible;
   opacity: 0.4;
 }
-
-
-
-
-
 
 .main__mesto {
   display: flex;
@@ -190,18 +174,16 @@
   min-height: 18px;
   flex-wrap: nowrap;
   margin: 0 auto;
-
 }
 
 .main__nav__link {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: rgba(51, 51, 51, 0.7);
   text-decoration: none;
-
 }
 
 .main__main__glav {
@@ -230,7 +212,7 @@ h1 {
   padding: 30px 0 32px 120px;
   max-width: 1440px;
   min-height: 56px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -253,8 +235,6 @@ h1 {
 .main__list {
   gap: 8px;
   display: flex;
-
-
 }
 
 .main__btn {
@@ -264,21 +244,20 @@ h1 {
   padding: 6px 8px;
   gap: 4px;
   border-radius: 24px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  border: 1px solid #C1C5CD;
-  background-color: #F9FDFD;
+  border: 1px solid #c1c5cd;
+  background-color: #f9fdfd;
   cursor: pointer;
 }
 
 .main__btn:focus {
-  border: 2px solid #16C8BB;
+  border: 1px solid #16c8bb;
   border-radius: 24px;
   position: relative;
-
 }
 
 .hero {
@@ -290,29 +269,26 @@ h1 {
   padding: 24px 120px 24px 120px;
   margin: 0 auto;
   width: 100%;
-
-
 }
 
 .hero__info__block {
   position: relative;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #C1C5CD;
+  border: 1px solid #c1c5cd;
   border-radius: 24px;
-
+  box-shadow: 0 2px 4px #0000001a;
 }
-
 
 .hero__btn {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #C1C5CD;
+  border: 1px solid #c1c5cd;
   border-radius: 24px;
   padding: 6px 8px;
   gap: 4px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -320,8 +296,6 @@ h1 {
   position: absolute;
   top: 8px;
   left: 8px;
-
-
 }
 
 .hero__btn__btn {
@@ -329,11 +303,11 @@ h1 {
   flex-direction: row;
   align-items: flex-start;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #C1C5CD;
+  border: 1px solid #c1c5cd;
   border-radius: 24px;
   padding: 6px 8px;
   gap: 4px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -347,28 +321,23 @@ h1 {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   width: 100%;
-
 }
 
 .herotwo__img {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   min-width: 100%;
-
 }
 
 .herothree__img {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   min-width: 100%;
-
 }
-
-
 
 .hero__heading__oglav {
   display: flex;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -380,7 +349,7 @@ h1 {
 }
 
 .hero__text__osnova {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -389,7 +358,7 @@ h1 {
 }
 
 .hero__text__after {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -400,7 +369,7 @@ h1 {
 
 .hero__text__data {
   display: flex;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -409,11 +378,9 @@ h1 {
   color: #868686;
   position: absolute;
   bottom: 0;
-
 }
 
 .herotwo {
-
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 475px 475px;
@@ -426,31 +393,31 @@ h1 {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
-
+  
 }
 
 .herotwo__info__block {
   position: relative;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #C1C5CD;
+  border: 1px solid #c1c5cd;
   border-radius: 24px;
-
+  box-shadow: 0 2px 4px #0000001a;
 }
 
 .herotwo__info__blocknone {
   position: relative;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #C1C5CD;
+  border: 1px solid #c1c5cd;
   border-radius: 24px;
 }
 
 .herothree__info__blocknone {
   position: relative;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #C1C5CD;
+  border: 1px solid #c1c5cd;
   border-radius: 24px;
+  box-shadow: 0 2px 4px #0000001a;
 }
-
 
 .herothree {
   display: grid;
@@ -462,15 +429,13 @@ h1 {
   padding-right: 120px;
   gap: 24px;
   margin-right: 120px;
-
 }
 
 .herothree__info__block {
   position: relative;
   background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #C1C5CD;
+  border: 1px solid #c1c5cd;
   border-radius: 24px;
-
 }
 
 .main__btn__end {
@@ -478,8 +443,6 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-
-
 }
 
 .end__btn {
@@ -488,33 +451,26 @@ h1 {
   width: 230px;
   height: 48px;
   border: 120px;
-  background: #35B3A9;
-  color: #FFFFFF;
+  background: #35b3a9;
+  color: #ffffff;
   border-radius: 4px;
   margin-top: 56px;
   cursor: pointer;
   margin-bottom: 96px;
-
-
-
 }
 
 .end__btn:hover {
   background: rgba(0, 0, 0, 0);
-  color: #03B2A5;
+  color: #03b2a5;
   box-shadow: inset 0 0 0 3px #16704b;
 }
 
 footer {
-  background-color: #2963A3;
+  background-color: #2963a3;
   max-width: 3000px;
   max-height: 746px;
   margin: 0 auto;
   width: 100%;
-
-
-
-
 }
 
 .footer__block {
@@ -526,11 +482,6 @@ footer {
   padding-top: 40px;
   padding-right: 120px;
   justify-content: space-between;
-
-
-
-
-
 }
 
 .footer__navi {
@@ -540,8 +491,6 @@ footer {
   max-height: 184px;
   justify-content: space-between;
   grid-column-gap: 93px;
-
-
 }
 
 .footer__list {
@@ -561,11 +510,10 @@ footer {
   list-style: none;
   line-height: 150%;
   color: #fff;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   white-space: nowrap;
-
 }
 
 .footer__mail {
@@ -574,7 +522,6 @@ footer {
   max-height: 170px;
   flex-direction: column;
   flex-wrap: wrap;
-
 }
 
 .footer__email {
@@ -582,26 +529,25 @@ footer {
   max-width: 384px;
   max-height: 108px;
   flex-direction: column;
-
 }
 
 .footer__text {
   display: flex;
   max-width: 356px;
   max-height: 52px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__form {
   display: flex;
   max-width: 384px;
   max-height: 48px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(157, 157, 157, 0.2);
   border-radius: 4px;
   justify-content: space-between;
@@ -613,10 +559,9 @@ footer {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #fff;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   opacity: 0.7;
-
 }
 
 .input-btn {
@@ -630,13 +575,12 @@ footer {
   width: 64px;
   height: 48px;
   border: none;
-  background-image: url('images/Auto\ Layout\ Horizontal.svg');
+  background-image: url("images/Auto\ Layout\ Horizontal.svg");
   background-size: cover;
   justify-content: end;
   cursor: pointer;
   float: right;
   align-self: end;
-
 }
 
 .image-button:hover {
@@ -647,8 +591,6 @@ footer {
   transform: scale(0.95);
 }
 
-
-
 .footer__social {
   display: flex;
   max-width: 221px;
@@ -657,7 +599,6 @@ footer {
 
   gap: 40px;
   flex-wrap: nowrap;
-
 }
 
 .footer__logo {
@@ -665,20 +606,18 @@ footer {
   width: 221px;
   height: 50px;
   gap: 8px;
-
 }
 
 .footer__logo__text {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .footer__social__svg {
@@ -686,18 +625,14 @@ footer {
   max-width: 221px;
   max-height: 50px;
   gap: 16px;
-
 }
 
 .hr {
-
   max-width: 1440px;
-  height: 1px;
+
   margin: 24px 120px 16px 120px;
   background: #9d9d9d;
   opacity: 0.3;
-
-
 }
 
 .footer__under {
@@ -706,27 +641,22 @@ footer {
   width: 100%;
   min-height: 20px;
   padding: 0 0 16px 120px;
-
-
 }
 
 .footer__under__text {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.7;
-
-
 }
 
 @media (max-width: 1024px) {
   * {
     max-width: 1024px;
   }
-
 
   .header {
     height: 76px;
@@ -735,8 +665,7 @@ footer {
     align-items: center;
     flex-direction: row;
     padding: 0;
-    border-bottom: 1px solid #EFF5FB;
-
+    border-bottom: 1px solid #eff5fb;
   }
 
   .header__fix {
@@ -774,9 +703,7 @@ footer {
     margin-left: 32px;
   }
 
-
   .main__mesto {
-
     padding: 16px 0 0 32px;
     width: 1024px;
     margin: 0;
@@ -797,14 +724,11 @@ footer {
     flex-wrap: wrap;
     gap: 6px;
     padding: 0;
-
   }
 
   .main__btn {
     height: 32px;
-
   }
-
 
   .hero {
     padding: 0 0 0 32px;
@@ -813,7 +737,6 @@ footer {
     margin: 24px 0 0 0;
     display: flex;
   }
-
 
   .hero__info__block {
     gap: 24px;
@@ -839,7 +762,6 @@ footer {
     padding: 0;
     width: 960px;
     height: 940px;
-
   }
 
   .herotwo__info__block {
@@ -855,7 +777,6 @@ footer {
   .herotwo__img {
     width: 303px;
     height: 206px;
-
   }
 
   .hero__text__after {
@@ -882,7 +803,6 @@ footer {
   .herothree__img {
     width: 303px;
     height: 206px;
-
   }
 
   .hero__text__after {
@@ -895,8 +815,6 @@ footer {
     align-items: center;
     padding: 0;
     margin: 35px 0 65px 0;
-
-
   }
 
   .end__btn {
@@ -905,21 +823,18 @@ footer {
     width: 230px;
     min-height: 48px;
     border: 120px;
-    background: #35B3A9;
-    color: #FFFFFF;
+    background: #35b3a9;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
     padding: 0;
     margin: 0;
-
   }
 
   .footer {
-    background-color: #2963A3;
+    background-color: #2963a3;
     width: 1024px;
     height: 302px;
-
-
   }
 
   .footer__block {
@@ -928,7 +843,6 @@ footer {
     height: 224px;
     margin: 0 26px 24px 38px;
     padding: 40px 0 0 0;
-
   }
 
   .footer__navi {
@@ -977,11 +891,9 @@ footer {
     height: 50px;
     border-top: 40px;
     gap: 16px;
-
   }
 
   .hr {
-
     width: 960px;
     height: 1px;
     margin: 24px 32px 16px 32px;
@@ -1000,13 +912,10 @@ footer {
     height: 20px;
     padding-left: 32px;
     padding-bottom: 16px;
-
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
   * {
     max-width: 768px;
   }
@@ -1024,7 +933,6 @@ footer {
     right: 20px;
     margin-top: 10px;
     padding: 11px 11px 11px 11px;
-
   }
 
   .header__btn {
@@ -1042,8 +950,7 @@ footer {
     align-items: center;
     flex-direction: row;
     padding: 0;
-    border-bottom: 1px solid #EFF5FB;
-
+    border-bottom: 1px solid #eff5fb;
   }
 
   .header__fix {
@@ -1056,7 +963,6 @@ footer {
     justify-content: start;
   }
 
-
   .header__item {
     display: flex;
     flex-wrap: nowrap;
@@ -1065,7 +971,6 @@ footer {
   .header__logo {
     margin-left: 20px;
   }
-
 
   .main__mesto {
     padding: 16px 0 0 20px;
@@ -1088,14 +993,11 @@ footer {
     flex-wrap: wrap;
     gap: 8px;
     padding: 0;
-
   }
 
   .main__btn {
     height: 32px;
-
   }
-
 
   .hero {
     padding: 0;
@@ -1105,7 +1007,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-
 
   .hero__info__block {
     gap: 24px;
@@ -1132,25 +1033,21 @@ footer {
     grid-template-columns: auto auto;
     grid-template-rows: 458px 458px 458px;
     flex-wrap: wrap;
-
   }
 
   .herotwo__info__block {
     height: 446px;
     width: 352px;
-
   }
 
   .herotwo__info__blocknone {
     height: 446px;
     width: 352px;
-
   }
 
   .herotwo__img {
     width: 351px;
     height: 206px;
-
   }
 
   .hero__text__after {
@@ -1165,7 +1062,6 @@ footer {
     display: grid;
     grid-template-columns: 352px 352px;
     grid-template-rows: 446px 446px;
-
   }
 
   .herothree__info__block {
@@ -1181,7 +1077,6 @@ footer {
   .herothree__img {
     width: 351px;
     height: 206px;
-
   }
 
   .hero__text__after {
@@ -1194,18 +1089,12 @@ footer {
     align-items: center;
     padding: 0;
     margin: 55px 0 55px 0;
-
-
   }
 
-
-
   .footer {
-    background-color: #2963A3;
+    background-color: #2963a3;
     width: 768px;
     min-height: 454px;
-
-
   }
 
   .footer__block {
@@ -1215,7 +1104,6 @@ footer {
     padding: 35px 20px 0 20px;
     flex-wrap: wrap;
     margin: 0;
-
   }
 
   .footer__navi {
@@ -1265,11 +1153,9 @@ footer {
     height: 50px;
     border-top: 40px;
     gap: 16px;
-
   }
 
   .hr {
-
     width: 728px;
     height: 1px;
     margin: 27px 20px 16px 20px;
@@ -1284,16 +1170,10 @@ footer {
     height: 37px;
     margin-left: 20px;
     padding: 0;
-
-
-
   }
-
-
 }
 
 @media screen and (max-width: 414px) {
-
   * {
     max-width: 414px;
   }
@@ -1311,7 +1191,6 @@ footer {
     right: 20px;
     margin-top: 10px;
     padding: 11px 11px 11px 11px;
-
   }
 
   #hamburger-menu #sidebar-menu {
@@ -1329,7 +1208,6 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-
   }
 
   .menu {
@@ -1344,16 +1222,12 @@ footer {
     max-width: 414px;
     flex-wrap: nowrap;
     margin: 0;
-
-
   }
 
   .menu__href {
     display: flex;
     flex-wrap: nowrap;
-
   }
-
 
   .header__btn {
     display: none;
@@ -1370,8 +1244,7 @@ footer {
     align-items: center;
     flex-direction: row;
     padding: 0;
-    border-bottom: 1px solid #EFF5FB;
-
+    border-bottom: 1px solid #eff5fb;
   }
 
   .header__fix {
@@ -1385,7 +1258,6 @@ footer {
     justify-content: start;
   }
 
-
   .header__item {
     display: flex;
     flex-wrap: nowrap;
@@ -1394,7 +1266,6 @@ footer {
   .header__logo {
     margin-left: 24px;
   }
-
 
   .main__mesto {
     padding: 16px 0 0 20px;
@@ -1431,7 +1302,6 @@ footer {
     flex-wrap: nowrap;
   }
 
-
   .hero {
     padding: 0;
     width: 374px;
@@ -1440,7 +1310,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
-
 
   .hero__info__block {
     gap: 16px;
@@ -1467,13 +1336,11 @@ footer {
     grid-template-rows: 466px 458px 458px;
     flex-wrap: wrap;
     gap: 8px;
-
   }
 
   .herotwo__info__block {
     height: 462px;
     width: 374px;
-
   }
 
   .herotwo__info__blocknone {
@@ -1489,8 +1356,6 @@ footer {
     height: 206px;
   }
 
-
-
   .hero__text__after {
     padding: 4px 0 8px 0;
   }
@@ -1503,7 +1368,6 @@ footer {
     display: grid;
     grid-template-columns: 352px 352px;
     grid-template-rows: 446px 446px;
-
   }
 
   .herothree__info__block {
@@ -1514,7 +1378,6 @@ footer {
   .herothree__img {
     width: 351px;
     height: 206px;
-
   }
 
   .hero__text__after {
@@ -1527,8 +1390,6 @@ footer {
     align-items: center;
     padding: 0;
     margin: 55px 0 55px 0;
-
-
   }
 
   .end__btn {
@@ -1537,22 +1398,18 @@ footer {
     width: 182px;
     min-height: 48px;
     border: 120px;
-    background: #35B3A9;
-    color: #FFFFFF;
+    background: #35b3a9;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
     padding: 0;
     margin: 0;
-
   }
 
   .footer {
-    background-color: #2963A3;
+    background-color: #2963a3;
     width: 414px;
     min-height: 746px;
-
-
-
   }
 
   .footer__block {
@@ -1562,7 +1419,6 @@ footer {
     padding: 0px 20px 0 20px;
     flex-wrap: wrap;
     margin: 0;
-
   }
 
   .footer__navi {
@@ -1610,13 +1466,9 @@ footer {
     display: flex;
     width: 221px;
     height: 50px;
-
-
-
   }
 
   .hr {
-
     width: 374px;
     height: 1px;
     margin: 0px 20px 20px 20px;
@@ -1633,15 +1485,10 @@ footer {
     margin-left: 20px;
     padding: 0;
     flex-wrap: wrap;
-
-
-
   }
-
 }
 
 @media screen and (max-width: 320px) {
-
   * {
     max-width: 320px;
   }
@@ -1659,7 +1506,6 @@ footer {
     right: 20px;
     margin-top: 0;
     padding: 8px 8px 8px 8px;
-
   }
 
   #hamburger-menu #sidebar-menu {
@@ -1676,11 +1522,10 @@ footer {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-
   }
 
   #hamburger-menu a {
-    color: #B9FAF8;
+    color: #b9faf8;
     font-size: 1rem;
     text-decoration: none;
   }
@@ -1700,8 +1545,7 @@ footer {
     align-items: center;
     flex-direction: row;
     padding: 0;
-    border-bottom: 1px solid #EFF5FB;
-
+    border-bottom: 1px solid #eff5fb;
   }
 
   .header__fix {
@@ -1715,7 +1559,6 @@ footer {
     justify-content: start;
   }
 
-
   .header__item {
     display: flex;
     flex-wrap: nowrap;
@@ -1724,7 +1567,6 @@ footer {
   .header__logo {
     margin-left: 16px;
   }
-
 
   .menu__href {
     display: flex;
@@ -1876,8 +1718,8 @@ footer {
     width: 182px;
     min-height: 48px;
     border: 120px;
-    background: #35B3A9;
-    color: #FFFFFF;
+    background: #35b3a9;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
     padding: 0;
@@ -1885,7 +1727,7 @@ footer {
   }
 
   .footer {
-    background-color: #2963A3;
+    background-color: #2963a3;
     width: 320px;
     min-height: 746px;
   }
@@ -1897,7 +1739,6 @@ footer {
     padding: 35px 20px 0 20px;
     flex-wrap: wrap;
     margin: 0;
-
   }
 
   .footer__navi {
@@ -1975,5 +1816,4 @@ footer {
     padding: 0;
     flex-wrap: wrap;
   }
-
 }
